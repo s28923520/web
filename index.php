@@ -9,21 +9,20 @@
 </head>
 
 <body>
-    <h1>首頁</h1>
-    <!-- 團務按鈕，透過超連結導向到團務畫面 -->
-    <a href="show.php">
-        <button>揪團</button>
-    </a>
-
-    <!-- 新增按鈕，透過超連結導向到新增畫面 -->
-    <a href="create.php">
-        <button>新增揪團</button>
-    </a>
-
-    <!-- 修改按鈕，透過超連結導向到修改畫面 -->
-    <a href="creadit.php">
-        <button>修改揪團資料</button>
-    </a>
+    <div class="banner">
+        <!-- 團務按鈕，透過超連結導向到團務畫面 -->
+        <a href="show.php">
+            <button>揪團表單</button>
+        </a>　
+        <!-- 新增按鈕，透過超連結導向到新增畫面 -->
+        <a href="create.php">
+            <button>新增表單</button>
+        </a>　
+        <!-- 修改按鈕，透過超連結導向到修改畫面 -->
+        <a href="edit.php">
+            <button>修改表單</button>
+        </a>
+    </div>
 </body>
 
 </html>

@@ -4,23 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>揪團表</title>
+    <title>揪團表單</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/func.js"></script>
 </head>
 
 <body>
-    <!-- <header>
-        <div class="banner">
-            <a href="https://www.plurk.com/">
-                <img src="https://s.plurk.com/brand/479e7351bbf90f495360.png" alt="plurk">
-            </a>
-            <br>
-            <a href="https://">
-                <img src="./logo/Facebook.png" alt="facebook" >
-            </a>
-        </div>
-    </header> -->
     <?php include_once "connect.php"; ?>
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>" id="tableForm">
         <select name="table" onchange="getTableData()">
