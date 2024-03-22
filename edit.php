@@ -37,7 +37,7 @@
             }
             ?>
         </select>
-    </form>
+
     <br></br>
     <form action="editfun.php" method="post">
         
@@ -47,11 +47,10 @@
         <input type="text" name="fettle" placeholder="貨況">
         <input type="text" name="date" placeholder="官方預計發售日">
         <input type="text" name="NTD" placeholder="金額">
-
         <br>
         <button type="submit" name="addgdata">新增團務資料</button>
-    </form>
-    <br>
+
+    <br>   <br></br>
     <form action="editfun.php" method="post">
         <label for="claim">新增認領資料：</label>
         <input type="text" name="role" placeholder="角色">
