@@ -19,7 +19,7 @@
             <button>新增表單</button>
         </a>　
         <!-- 修改按鈕，透過超連結導向到修改畫面 -->
-        <a href="creadit.php">
+        <a href="edit.php">
             <button>修改表單</button>
         </a>
     </div>

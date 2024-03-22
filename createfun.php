@@ -24,7 +24,7 @@ function createTable($conn, $database, $tableName) {
         ) ";
     } elseif ($database == "認領") {
         $sql = "CREATE TABLE `$database`.`$tableName` (
-            `ID` INT(20) AUTO_INCREMENT PRIMARY KEY ,
+            `id` INT(20) AUTO_INCREMENT PRIMARY KEY ,
             `角色` VARCHAR(10) NOT NULL,
             `認領人` VARCHAR(50) NULL
         ) ";

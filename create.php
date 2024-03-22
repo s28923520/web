@@ -20,14 +20,14 @@
 <body>
     <?php include "connect.php"; ?>
 
-    <form action="createfun.php" action="post" method="post">
+    <form action="createfun.php" method="post">
         <label for="group">新增團務表單：</label>
         <input type="text" name="groupname" placeholder="團務名稱">
         <br>
         <button type="submit" name="creategroup">建立團務表單</button>
     </form>
     <br>
-    <form action="createfun.php" action="post" method="post">
+    <form action="createfun.php" method="post">
         <label for="claim">新增認領表單：</label>
         <input type="text" name="claimname" placeholder="認領名稱">
         <br>
