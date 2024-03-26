@@ -11,6 +11,7 @@
         button {
             height: 40px;
         }
+
         button:hover {
             background-color: #C7DDC1;
         }
@@ -53,7 +54,5 @@
             ?>
         </select>
     </form>
-
-
     <div id="tableDataContainer"></div>
 </body>
