@@ -10,6 +10,7 @@
     <style>
         button {
             height: 40px;
+            width: 120px;
         }
 
         button:hover {
@@ -48,7 +49,7 @@
         <input type="text" name="date" placeholder="官方預計發售日">
         <input type="text" name="NTD" placeholder="金額">
         <br>
-        <button type="submit" name="addgdata">新增團務資料</button>
+        <button type="submit" name="addgdata">新增團務資料</button> <button type="submit" name="editgdata">修改認領資料</button>
 
     <br>   <br></br>
     <form action="editfun.php" method="post">
@@ -57,7 +58,7 @@
         <input type="text" name="claimant" placeholder="認領人">
 
         <br>
-        <button type="submit" name="addcdata">新增認領資料</button>
+        <button type="submit" name="addcdata">新增認領資料</button> <button type="submit" name="editcdata">修改認領資料</button>
     </form>
 
     <hr>
