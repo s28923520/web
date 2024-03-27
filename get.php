@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset ($_GET["table"])) {
         echo "<br>";
     } else {
         echo "找不到符合條件的圖片";
+        echo "<br>";
     }
 
     // 查詢 "團務資料庫" 中是否存在選擇的資料表
@@ -37,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset ($_GET["table"])) {
     // 如果在兩個資料庫中都存在選取的表，則進行資料的顯示
     if ($result_data->num_rows > 0 && $result_test->num_rows > 0) {
         // 顯示團務資料
-        // echo " $selectedTable 團務";
+        echo "<h4 style='text-align: center;'>團務</h4>";
         $sql_data_select = "SELECT * FROM 團務.$selectedTable";
         $result_data_select = $conn2->query($sql_data_select);
         displayTable($result_data_select, 'th1');
-
+        echo "<br>";
         // 顯示團一資料表
-        // echo " $selectedTable 認領";
+        echo "<h4 style='text-align: center;'>認領</h4>";
         $sql_test_select = "SELECT * FROM $selectedTable";
         $result_test_select = $conn->query($sql_test_select);
         displayTable($result_test_select, '');

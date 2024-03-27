@@ -20,27 +20,26 @@
 
 <body>
     <?php include "connect.php"; ?>
-    <form action="createfun.php" method="post">
-        <label for="group">新增團務表單：</label>
-        <input type="text" name="groupname" placeholder="團務名稱">
-        <br>
-        <button type="submit" name="creategroup">建立團務表單</button>
-    </form>
-    <br>
-    <form action="createfun.php" method="post">
-        <label for="claim">新增認領表單：</label>
-        <input type="text" name="claimname" placeholder="認領名稱">
-        <br>
-        <button type="submit" name="createclaim">建立認領表單</button>
-    </form>
-    <br>
-    <form action="createfun.php" method="post" enctype="multipart/form-data">
-        <label for="images">選擇要上傳的圖片：</label>
-        <input type="file" name="images[]" id="images" multiple>
-        <br>
-        <button type="submit" name="submit">上傳圖片</button>
-    </form>
-
+    <div class="form-container">
+        <form action="createfun.php" method="post">
+            <label for="group">新增團務表單：</label>
+            <input type="text" name="groupname" placeholder="團務名稱">
+            <br>
+            <button id="g" type="submit" name="creategroup">建立團務表單</button>
+        </form>
+        <form action="createfun.php" method="post">
+            <label for="claim">新增認領表單：</label>
+            <input type="text" name="claimname" placeholder="認領名稱">
+            <br>
+            <button id="g" type="submit" name="createclaim">建立認領表單</button>
+        </form>
+        <form action="createfun.php" method="post" enctype="multipart/form-data">
+            <label for="images">選擇要上傳的圖片：</label>
+            <input type="file" name="images[]" id="images" multiple>
+            <br>
+            <button id="g" type="submit" name="submit">上傳圖片</button>
+        </form>
+    </div>
     <hr>
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>" id="tableForm">
         <select name="table" onchange="getTableData()">
