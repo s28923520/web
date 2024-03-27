@@ -44,16 +44,24 @@ tr:hover {
 }
 
 form {
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: auto;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   text-align: center;
   background-color: #f0f7ee;
   width: auto;
+  height: auto;
+  flex: 1;
 }
 
+.form-container {
+  display: flex;
+  background-color:#f0f7ee;
+  /* text-align: center; */
+  justify-content: space-between;
+}
 select {
   padding: 10px;
   /* margin-top: 10px; */
@@ -95,14 +103,24 @@ button {
   text-size-adjust: 50px;
 }
 
+#g{
+  height: 40px;
+}
 button:hover {
   color: #000000;
   background-color: #c4d7f2;
 }
+
+#g:hover{
+  background-color: #C7DDC1;
+}
+
+
 input {
   border-radius: 5px;
   margin: auto; /* 讓按鈕水平置中 */
   display: block; /* 讓 margin:auto 生效 */
+  text-align: center;
 }
 
 
