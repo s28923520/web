@@ -53,13 +53,14 @@ form {
   background-color: #f0f7ee;
   width: auto;
   height: auto;
+  flex: 1;
 }
 
 .form-container {
   display: flex;
   background-color:#f0f7ee;
-  text-align: center;
-  justify-content: center
+  /* text-align: center; */
+  justify-content: space-between;
 }
 select {
   padding: 10px;
