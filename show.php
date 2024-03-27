@@ -25,9 +25,12 @@
     </form>
     <div id="tableDataContainer"></div>
     <!-- 浮動按鈕 icon、連結可變更-->
-    <div id="floatbuttons"> 
+    <div id="floatbuttons">
+        <img id="scrollToTop" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-chevron-up-512.png" alt="回到頁首" onclick="scrollToTop()">
+        <br>
+        <br>
         <a href="https://www.plurk.com/" target="_blank">
-            <img src="https://s.plurk.com/brand/479e7351bbf90f495360.png" alt="plurk" >
+            <img src="https://s.plurk.com/brand/479e7351bbf90f495360.png" alt="plurk">
         </a>
         <br>
         <a href="https://www.facebook.com/" target="_blank">
@@ -35,5 +38,12 @@
         </a>
     </div>
 </body>
-
+<script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </html>
