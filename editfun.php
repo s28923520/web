@@ -12,6 +12,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["table"])) {
         $date = $_POST["date"];
         $NTD = $_POST["NTD"];
 
+        // 檢查是否有欄位未填寫，如果未填寫則將其設置為原有值
+        $sql = "SELECT * FROM `$selectedTable` LIMIT 1";
+        $result = $conn2->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if ($amount == '') $amount = $row['數量'];
+            if ($fettle == '') $fettle = $row['貨況'];
+            if ($date == '') $date = $row['官方預計發售日'];
+            if ($NTD == '') $NTD = $row['金額'];
+        }
+
         // 插入資料到相應的資料庫表中
         $sql = "INSERT INTO `$selectedTable` (`品項`, `數量`, `貨況`, `官方預計發售日`, `金額`) VALUES ('$gname', '$amount', '$fettle', '$date', '$NTD')";
         if ($conn2->query($sql) === TRUE) {
@@ -37,15 +48,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["table"])) {
         $date = $_POST["date"];
         $NTD = $_POST["NTD"];
 
+        // 檢查是否有欄位未填寫，如果未填寫則將其設置為原有值
+        $sql = "SELECT * FROM `$selectedTable` WHERE `品項`='$gname' LIMIT 1";
+        $result = $conn2->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if ($amount == '') $amount = $row['數量'];
+            if ($fettle == '') $fettle = $row['貨況'];
+            if ($date == '') $date = $row['官方預計發售日'];
+            if ($NTD == '') $NTD = $row['金額'];
+        }
+
         // 插入資料到相應的資料庫表中
         $sql = "UPDATE `$selectedTable` SET `數量`='$amount',`貨況`='$fettle',`官方預計發售日`='$date',`金額`='$NTD' WHERE `品項`='$gname'";
-        // $sql = "UPDATE `$selectedTable` SET `數量`='試試',`貨況`='修改',`官方預計發售日`='LA',`金額`='' WHERE `品項`= '測試2'";
         if ($conn2->query($sql) === TRUE) {
             echo "團務資料已成功修改";
         } else {
             echo "Error: " . $sql . "<br>" . $conn2->error;
         }
-    }elseif (isset($_POST["editcdata"])) { // 修改認領資料
+    } elseif (isset($_POST["editcdata"])) { // 修改認領資料
         $role = $_POST["role"];
         $claimant = $_POST["claimant"];
 
