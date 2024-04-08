@@ -1,3 +1,6 @@
+![image](https://github.com/s28923520/web/assets/148187817/1a8a1971-04cf-45ba-b185-ca3c77b777d8)
+
+
 顯示資料庫中的資料表標題，選擇標題後能夠顯示兩個資料庫的資料
 
 ![image](https://github.com/s28923520/web/assets/148187817/074567bb-1c71-4413-bedd-715e036eb2eb) ![image](https://github.com/s28923520/web/assets/148187817/d96b9db9-8df2-477b-aa73-1ca255199bd1)
