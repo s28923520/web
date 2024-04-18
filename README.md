@@ -1,3 +1,7 @@
+操作展示
+https://github.com/s28923520/web/assets/148187817/7541c9bc-9c2f-4484-87cd-b83238f0f0b0
+
+
 ![image](https://github.com/s28923520/web/assets/148187817/1a8a1971-04cf-45ba-b185-ca3c77b777d8)
 
 
